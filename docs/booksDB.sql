@@ -107,13 +107,13 @@ VALUES (8, 'Crime');
 
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (1, 'The devastation of Baal',
-        'Baal is besieged! The alien horror of Hive Fleet Leviathan has reached the Blood Angels home world, and their entire existence is under threat. As the sons of Sanguinius gather, the battle for the fate of their bloodline begins…',
+        'Baal is besieged! The alien horror of Hive Fleet Leviathan has reached the Blood Angels home world, and their entire existence is under threat. As the sons of Sanguinius gather, the battle for the fate of their bloodline begins...',
         'https://www.games-workshop.com/resources/catalog/product/920x950/60040181837_DevastationofBaalLtdEd01.jpg',
         1);
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (2, 'Dark Imperium',
-        'The first phase of the Indomitus Crusade is over, and the conquering primarch, Roboute Guilliman, sets his sights on home. His traitorous brother, Mortarion, marches on Ultramar, and only the primarch of the Ultramarines – with his armies of Primaris Space Marines – can hope to thwart the Death Guards schemes.',
+        'The first phase of the Indomitus Crusade is over, and the conquering primarch, Roboute Guilliman, sets his sights on home. His traitorous brother, Mortarion, marches on Ultramar, and only the primarch of the Ultramarines - with his armies of Primaris Space Marines - can hope to thwart the Death Guards schemes.',
         'https://www.games-workshop.com/resources/catalog/product/920x950/60100181794_DarkImperiumReduxENGBPB.jpg',
         1);
 --
@@ -125,7 +125,7 @@ VALUES (3, 'Horus Rising',
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (4, 'Eisenhorn  - Xenos',
-        'Inquisitor Eisenhorn faces a vast interstellar cabal and the dark power of daemons, all racing to recover an arcane text of abominable power – an ancient tome known as the Necroteuch.',
+        'Inquisitor Eisenhorn faces a vast interstellar cabal and the dark power of daemons, all racing to recover an arcane text of abominable power - an ancient tome known as the Necroteuch.',
         'https://www.games-workshop.com/resources/catalog/product/920x950/60040181803_BLEisenhornXenosIllustratedandAnnotated01.jpg',
         2);
 --
@@ -149,13 +149,13 @@ VALUES (7, 'Mephiston: Revenant Crusade',
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (8, 'Mephiston: Blood of Sanguinius',
-        'The shrine world of Divinatus Prime has become lost to the light of the Astronomican and no ship can piece its veil. Only the Lord of Death himself, Blood Angels Chief Librarian Mephiston, has any hope of discerning the fate of this once pious world. After enacting a powerful blood ritual, Mephiston and an honour guard of his fellow Blood Angels reach the stricken shrine world to find it seized by religious civil war. Each faction fights for dominance of a potent artefact, the Blade Petrific, said to be wrought by the Emperor Himself. Yet there is more at work here than a mere ideological schism, for Mephiston believes Divinatus Prime could offer answers to how he became the Lord of Death, he who resisted the Black Rage, and possibly even a way to end the curse of ‘the Flaw’ in all Blood Angels.',
+        'The shrine world of Divinatus Prime has become lost to the light of the Astronomican and no ship can piece its veil. Only the Lord of Death himself, Blood Angels Chief Librarian Mephiston, has any hope of discerning the fate of this once pious world. After enacting a powerful blood ritual, Mephiston and an honour guard of his fellow Blood Angels reach the stricken shrine world to find it seized by religious civil war. Each faction fights for dominance of a potent artefact, the Blade Petrific, said to be wrought by the Emperor Himself. Yet there is more at work here than a mere ideological schism, for Mephiston believes Divinatus Prime could offer answers to how he became the Lord of Death, he who resisted the Black Rage, and possibly even a way to end the curse of "the Flaw" in all Blood Angels.',
         'https://www.blacklibrary.com/Images/Product/DefaultBL/xlarge/BLPROCESSED-MephistonBloodOfSanguiniusnew.jpg',
         3);
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (9, 'Last Flight of the Einsenstein',
-        'Having witnessed the terrible massacre on Isstvan III, Death Guard Captain Garro seizes a ship and sets a course for Terra to warn the Emperor of Horus’s treachery.',
+        'Having witnessed the terrible massacre on Isstvan III, Death Guard Captain Garro seizes a ship and sets a course for Terra to warn the Emperor of Horus treachery.',
         'https://www.games-workshop.com/resources/catalog/product/920x950/60100181294_TheFlightoftheEisensteinENGHB.jpg',
         4);
 --
@@ -168,7 +168,7 @@ VALUES (10, 'Nemesis',
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (11, 'The First Heretic',
         'Chastised by the Emperor, the Word Bearers set out on their own path - one that will eventually lead them to damnation and heresy and plunge the galaxy into war.',
-        'https://www.blacklibrary.com/Images/Product/DefaultBL/xlarge/audio-nemesis-unabridged.jpg',
+        'https://www.games-workshop.com/resources/catalog/product/920x950/60100181133_BLTheFirstHereticNEW01.jpg',
         5);
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
@@ -192,7 +192,7 @@ VALUES (14, 'Meditations',
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
 VALUES (15, 'Silence',
         'Silence is a 1966 novel of theological and historical fiction by Japanese author Shusaku Endo, published in English by Peter Owen Publishers. It is the story of a Jesuit missionary sent to 17th century Japan, who endures persecution in the time of Kakure Kirishitan that followed the defeat of the Shimabara Rebellion.',
-        'https://images-na.ssl-images-amazon.com/images/I/917TGSXH7RL.jpg',
+        'https://pictures.abebooks.com/isbn/9781447299851-uk.jpg',
         8);
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`)
