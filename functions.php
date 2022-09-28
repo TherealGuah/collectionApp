@@ -19,7 +19,8 @@ function connect_to_db($dbName)
  * @param PDO $db, the database to extract from
  * @return array, the associative array of the items
  */
-function extract_from_db(PDO $db): array {
+function extract_from_db(PDO $db): array
+{
 
     $query = $db->prepare('
     SELECT `books`.`id`, `books`.`title`, `books`.`image_link`, `books`.`description`,
