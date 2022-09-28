@@ -66,5 +66,4 @@ class Functions extends TestCase
         addItemToHTML($input);
     }
 
-
 }
