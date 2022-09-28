@@ -3,10 +3,10 @@
 /**
  * connects to the database and sets the attribute
  *
- * @param $dbName, the name of the db to connect to
+ * @param string $dbName, the name of the db to connect to
  * @return PDO, the db connection
  */
-function connect_to_db($dbName)
+function connect_to_db(string $dbName): PDO
 {
     $db = new PDO('mysql:host=db;dbname=' . $dbName, 'root', 'password');
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -19,7 +19,8 @@ function connect_to_db($dbName)
  * @param PDO $db, the database to extract from
  * @return array, the associative array of the items
  */
-function extract_from_db(PDO $db): array {
+function extract_from_db(PDO $db): array
+{
 
     $query = $db->prepare('
     SELECT `books`.`id`, `books`.`title`, `books`.`image_link`, `books`.`description`,
