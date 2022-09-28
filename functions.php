@@ -52,17 +52,15 @@ function addItemToHTML(array $dataFromQuery): string
             (isset($itemFromQuery['description'])) &&
             (isset($itemFromQuery['name']))
         ) {
-            $result .= '
-                        <div class = "itemContainer">
-                            <h2>' . $itemFromQuery['title'] . '</h2>
-                            <p>Author: ' . $itemFromQuery['name'] . '</p>
-                            <div>
-                                <img src="' . $itemFromQuery['image_link'] . '" alt="book cover example">
-                            </div>
-                            <p>About: ' . $itemFromQuery['description'] . '</p>
-                            <p>Category: ' . $itemFromQuery['category'] . '</p>
-                        </div>
-                        ';
+            $result .= '<div class = "itemContainer">'
+                           . '<h2>' . $itemFromQuery['title'] . '</h2>'
+                            . '<p>Author: ' . $itemFromQuery['name'] . '</p>'
+                            . '<div>'
+                                . '<img src="' . $itemFromQuery['image_link'] . '" alt="book cover example">'
+                            . '</div>'
+                            . '<p>About: ' . $itemFromQuery['description'] . '</p>'
+                            . '<p>Category: ' . $itemFromQuery['category'] . '</p>'
+                        . '</div>';
         }
     }
     return $result;
