@@ -26,8 +26,8 @@ DROP TABLE IF EXISTS `books`;
 CREATE TABLE `books` (
                          `id` int(11) NOT NULL AUTO_INCREMENT,
                          `title` varchar(255) NOT NULL,
-                         `description` varchar(1000) DEFAULT NULL,
-                         `image_link` varchar(1000) DEFAULT NULL,
+                         `description` varchar(500) DEFAULT NULL,
+                         `image_link` varchar(500) DEFAULT NULL,
                          `author_id` int(11) NOT NULL,
                          `category_id` int(11) NOT NULL,
                          PRIMARY KEY (`id`),
@@ -136,13 +136,13 @@ VALUES (6, 'Eisenhorn - Hereticus',
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`, `category_id`)
 VALUES (7, 'Mephiston: Revenant Crusade',
-        'As the Great Rift tears the galaxy apart, portents and darkness beset Mephiston. At the time when he needs his psychic sight the most, the Chief Librarian''s powers are rendered blind by some inexplicable force. Haunted by the ghosts of the damned, their purpose unclear, Mephiston takes his ship the Blood Oath and the Blood Angels in his charge to the world of Morsus where he believes the source of his psychic blindness is to be found. But Morsus is embroiled in conflict too, a longstanding struggle between the Imperium and some of its most ancient foes called the Revenant Crusade.',
+        'As the Great Rift tears the galaxy apart, portents and darkness beset Mephiston. At the time when he needs his psychic sight the most, the Chief Librarian''s powers are rendered blind by some inexplicable force. Haunted by the ghosts of the damned, their purpose unclear, Mephiston takes his ship the Blood Oath and the Blood Angels in his charge to the world of Morsus where he believes the source of his psychic blindness is to be found.',
         'https://www.blacklibrary.com/Images/Product/DefaultBL/xlarge/BLPROCESSED-Mephiston-Revenant-Crusade.jpg',
         3, 1);
 --
 INSERT INTO `books` (`id`, `title`, `description`, `image_link`, `author_id`, `category_id`)
 VALUES (8, 'Mephiston: Blood of Sanguinius',
-        'The shrine world of Divinatus Prime has become lost to the light of the Astronomican and no ship can piece its veil. Only the Lord of Death himself, Blood Angels Chief Librarian Mephiston, has any hope of discerning the fate of this once pious world. After enacting a powerful blood ritual, Mephiston and an honour guard of his fellow Blood Angels reach the stricken shrine world to find it seized by religious civil war. Each faction fights for dominance of a potent artefact, the Blade Petrific, said to be wrought by the Emperor Himself. Yet there is more at work here than a mere ideological schism, for Mephiston believes Divinatus Prime could offer answers to how he became the Lord of Death, he who resisted the Black Rage, and possibly even a way to end the curse of "the Flaw" in all Blood Angels.',
+        'The shrine world of Divinatus Prime has become lost to the light of the Astronomican and no ship can piece its veil. Only the Lord of Death himself, Blood Angels Chief Librarian Mephiston, has any hope of discerning the fate of this once pious world. After enacting a powerful blood ritual, Mephiston and an honour guard of his fellow Blood Angels reach the stricken shrine world to find it seized by religious civil war.',
         'https://www.blacklibrary.com/Images/Product/DefaultBL/xlarge/BLPROCESSED-MephistonBloodOfSanguiniusnew.jpg',
         3, 1);
 --
