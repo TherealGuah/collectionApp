@@ -5,36 +5,36 @@
 DROP TABLE IF EXISTS `authors`;
 
 CREATE TABLE `authors` (
-                           `id` int(11) NOT NULL AUTO_INCREMENT,
-                           `name` varchar(255) NOT NULL,
-                           `about` varchar(1000) DEFAULT NULL,
-                           PRIMARY KEY (`id`),
-                           UNIQUE KEY `name` (`name`)
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `name` varchar(255) NOT NULL,
+    `about` varchar(1000) DEFAULT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `name` (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS `categories`;
 
 CREATE TABLE `categories` (
-                              `id` int(11) NOT NULL AUTO_INCREMENT,
-                              `category` varchar(255) NOT NULL,
-                              PRIMARY KEY (`id`),
-                              UNIQUE KEY `category` (`category`)
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `category` varchar(255) NOT NULL,
+    PRIMARY KEY (`id`),
+     UNIQUE KEY `category` (`category`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 DROP TABLE IF EXISTS `books`;
 
 CREATE TABLE `books` (
-                         `id` int(11) NOT NULL AUTO_INCREMENT,
-                         `title` varchar(255) NOT NULL,
-                         `description` varchar(500) DEFAULT NULL,
-                         `image_link` varchar(500) DEFAULT NULL,
-                         `author_id` int(11) NOT NULL,
-                         `category_id` int(11) NOT NULL,
-                         PRIMARY KEY (`id`),
-                         KEY `author_id` (`author_id`),
-                         CONSTRAINT `books_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`),
-                         KEY `category_id` (`category_id`),
-                         CONSTRAINT `books_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `title` varchar(255) NOT NULL,
+    `description` varchar(500) DEFAULT NULL,
+    `image_link` varchar(500) DEFAULT NULL,
+    `author_id` int(11) NOT NULL,
+    `category_id` int(11) NOT NULL,
+    PRIMARY KEY (`id`),
+    KEY `author_id` (`author_id`),
+    CONSTRAINT `books_ibfk_1` FOREIGN KEY (`author_id`) REFERENCES `authors` (`id`),
+    KEY `category_id` (`category_id`),
+    CONSTRAINT `books_ibfk_2` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
