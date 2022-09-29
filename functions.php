@@ -60,7 +60,7 @@ function addItemToHTML(array $dataFromQuery): string
                             . '<img src="' . $itemFromQuery['image_link'] . '" alt="book cover example">'
                         . '</div>'
                         . '<div class="about">'
-                            . '<p>About: </p>'
+                            . '<h3>About: </h3>'
                             . '<p>' . $itemFromQuery['description'] . '</p>'
                         . '</div>'
                         . '<p class="category">Category: ' . $itemFromQuery['category'] . '</p>'
