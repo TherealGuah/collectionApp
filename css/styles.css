@@ -1,5 +1,105 @@
+/* Global Styles */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background: #d4ffd5;
+}
+
+/* --- Presentation Section --- */
+.presentation {
+    text-align: center;
+    font-size: 1.5rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0.25rem 0.25rem 1rem #00632b;
+    background-color: #63001c;
+    color: #ffffff;
+}
+
+.presentation h1 {
+    font-size: 3rem;
+}
+
+/* --- collection section--- */
+.collectionWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2.5%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.itemContainer {
+    width: 20rem;
+    height: 50rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #00632b;
+    box-shadow: 0.25rem 0.25rem 1rem #00632b;
+    display: grid;
+    grid-template-rows: 0.2fr 0.1fr 1.25fr 1.0fr 0.1fr;
+    margin: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    grid-row: 1 / 2;
+}
+
+.author {
+    grid-row: 2 / 3;
+}
+
+.image {
+    grid-row: 3 / 4;
+    overflow: hidden;
+}
+
+.about {
+    text-align: justify;
+    grid-row: 4 / 5;
+    overflow: hidden;
+    align-self: center;
+    padding: 0 1rem;
+    line-height: 1.5rem;
+}
+
+.category {
+    grid-row: 5 / 6;
+}
+
+@media only screen and (min-width: 600px) {
+    .presentation {
+        width:90%;
+        margin: 1rem auto;
+        border: 0.1rem solid #000000;
+        border-radius: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .presentation {
+        max-width: 50rem;
+        margin: 5rem auto;
+    }
+}

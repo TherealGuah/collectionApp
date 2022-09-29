@@ -1,7 +1,6 @@
 <?php
 require_once('functions.php');
 ?>
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,20 +10,25 @@ require_once('functions.php');
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Page Title</title>
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
-    <h1>My Books Collection</h1>
-    <p>Hi my name is Pedro and welcome to my book collection! All the following items are part of the books I've bought and read in the past couple of years.I hope they incite you to do some reading of yours also!</p>
-    <?php
 
-        $db = connect_to_db('booksDB');
+        <section class="presentation">
+            <h1>My Books Collection</h1>
+            <p>Books I've bought and read in the past couple of years.</p>
+            <p>I hope they inspire you to read more!</p>
+        </section>
 
-        $booksByAuthor = extract_from_db($db);
-
-        echo addItemToHTML($booksByAuthor);
-    ?>
+        <div class="collectionWrapper">
+            <?php
+            $db = connect_to_db('booksDB');
+            $booksByAuthor = extract_from_db($db);
+            echo addItemToHTML($booksByAuthor);
+            ?>
+        </div>
 
     </body>
 
