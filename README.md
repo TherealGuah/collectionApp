@@ -2,17 +2,18 @@
 
 ---
 # Table of Contents
-1. <a href="#about">About</a>
-2. <a href="#installation">Installation</a>
-3. <a href="#usage">Usage</a>
-4. <a href="#development">Development</a>
+1. [About](#1-about)
+2. [Installation](#2-installation)
+3. [Usage](#3-usage)
+4. [Development](#4-development)
 ---
 
-<h2 id="about">1. About</h2>
+## 1. About
 ### Content
 Project 2 relating to 2nd module of iO Full-Stack Web Development.
+
 ### Objective
-Individual project with the objective of testing knowledge aquired in the previous 2 week sprint of learning on the subjects of:
+Individual project with the objective of testing knowledge acquired in the previous 2 week sprint of learning on the subjects of:
 + Git / Github workflow and best practices
 + SQL to build and maintain a relational database
 + PHP and PSR-12 best practices to display and update the data from the database
@@ -25,7 +26,7 @@ Individual project with the objective of testing knowledge aquired in the previo
 + Git 
 
 ---
-<h2 id="installation">2. Installation</h2>
+## 2. Installation
 Follow the next steps to install locally:
 
 1. Install Git using the following the instructions for the corresponding OS - https://github.com/git-guides/install-git
@@ -39,19 +40,12 @@ git clone https://github.com/TherealGuah/collectionApp.git
    3. Copy the content of the booksDB.sql file in the "docs" folder manually into the "Query" section of Sequel Ace and click the "Run All" button
 4. Navigate on your Browser to localhost:1234/collectionApp/index.php to display the webpage with the data
 ---
-<h2 id="usage">3. Usage</h2>
+
+## 3. Usage
 After installation the data can be inserted manually using Sequel Ace to be displayed automatically. Later development will allow for insertion from within the browser.
+
 ---
-<h2 id="development">4. Development</h2>
+## 4. Development
 + Minimum Viable Product has been achieved as of current version.
 + Next step will include data insertion from a form within the browser
 ---
-
-
-
-
-
-
-
-
-
