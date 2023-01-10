@@ -6,9 +6,9 @@
  * @param string $dbName, the name of the db to connect to
  * @return PDO, the db connection
  */
-function connect_to_db(string $dbName): PDO
+function connect_to_db(string $host, string $dbName, string $username, string $password): PDO
 {
-    $db = new PDO('mysql:host=db;dbname=' . $dbName, 'root', 'password');
+    $db = new PDO('mysql:host=' . $host . ';dbname=' . $dbName, $username, $password);
     $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     return $db;
 }

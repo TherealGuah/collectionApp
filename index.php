@@ -24,7 +24,7 @@ require_once('functions.php');
 
         <div class="collectionWrapper">
             <?php
-            $db = connect_to_db('booksDB');
+            $db = connect_to_db('db','dbBooks', 'root', 'password');
             $booksByAuthor = extract_from_db($db);
             echo addItemToHTML($booksByAuthor);
             ?>
