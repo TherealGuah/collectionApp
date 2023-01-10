@@ -1,11 +1,5 @@
 # Books Collection App - iO Academy 2022
 
-# Table of Contents
-1. [About](#1-about)
-2. [Installation](#2-installation)
-3. [Usage](#3-usage)
-4. [Development](#4-development)
-
 ## 1. About
 ### Content
 Project 2 relating to 2nd module of iO Full-Stack Web Development.
