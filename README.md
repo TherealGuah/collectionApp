@@ -1,12 +1,10 @@
 # Books Collection App - iO Academy 2022
 
----
 # Table of Contents
 1. [About](#1-about)
 2. [Installation](#2-installation)
 3. [Usage](#3-usage)
 4. [Development](#4-development)
----
 
 ## 1. About
 ### Content
@@ -25,7 +23,6 @@ Individual project with the objective of testing knowledge acquired in the previ
 + CSS3
 + Git 
 
----
 ## 2. Installation
 Follow the next steps to install locally:
 
@@ -39,13 +36,10 @@ git clone https://github.com/TherealGuah/collectionApp.git
    2. Create a New Database named "booksDB"
    3. Copy the content of the booksDB.sql file in the "docs" folder manually into the "Query" section of Sequel Ace and click the "Run All" button
 4. Navigate on your Browser to localhost:1234/collectionApp/index.php to display the webpage with the data
----
 
 ## 3. Usage
 After installation the data can be inserted manually using Sequel Ace to be displayed automatically. Later development will allow for insertion from within the browser.
 
----
 ## 4. Development
 + Minimum Viable Product has been achieved as of current version.
 + Next step will include data insertion from a form within the browser
----
